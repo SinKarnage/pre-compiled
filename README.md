@@ -16,9 +16,8 @@ https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.11
 - Type `y` then enter key in any prompts!
 ```
 yes | pkg update && pkg upgrade
-yes | pkg install libjansson wget nano
-yes | pkg install vim netcat-openbsd rsync zsh git python3 termux-api
-yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+yes | pkg install libjansson wget git curl nano zsh termux-api 
+yes | bash -c "$(curl -fsSL https://git.io/oh-my-termux)"
 ```
 3. Download ccminer, config, start:
 ```
