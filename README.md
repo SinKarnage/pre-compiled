@@ -27,6 +27,10 @@ wget https://raw.githubusercontent.com/SinKarnage/pre-compiled/generic/config.js
 wget https://raw.githubusercontent.com/SinKarnage/pre-compiled/generic/start.sh
 chmod +x ccminer start.sh
 ```
+4. allow-external-apps property
+```
+value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/.termux/termux.properties"; mkdir -p "$(dirname "$file")"; chmod 700 "$(dirname "$file")"; if ! grep -E '^'"$key"'=.*' $file &>/dev/null; then [[ -s "$file" && ! -z "$(tail -c 1 "$file")" ]] && newline=$'\n' || newline=""; echo "$newline$key=$value" >> "$file"; else sed -i'' -E 's/^'"$key"'=.*/'"$key=$value"'/' $file; fi
+```
 # Usage:
 
 1. Edit your pools, address, worker name:
