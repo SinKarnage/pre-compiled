@@ -17,6 +17,7 @@ https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.11
 ```
 yes | pkg update && pkg upgrade
 yes | pkg install libjansson wget nano
+yes | pkg install vim netcat-openbsd rsync zsh git python3 termux-api
 ```
 3. Download ccminer, config, start:
 ```
